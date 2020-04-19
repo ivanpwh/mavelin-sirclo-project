@@ -8,9 +8,11 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'Dashboard',
       component: Dashboard
-    }
+    },
+    // otherwise go to here
+    { path: '*', redirect: '/home' }
   ]
 })
