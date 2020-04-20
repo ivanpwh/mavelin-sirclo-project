@@ -154,7 +154,7 @@ export default {
         data.banners.forEach((item, i) => {
           this.dataBanners.list.push({
             id: i,
-            source: `http://${item.image_file}`,
+            source: `https://${item.image_file}`,
             text: item.title,
             isActive: i === 0
           })
@@ -169,7 +169,7 @@ export default {
           var rdmPrice = Math.floor(Math.random() * this.priceList.length)
           this.dataMen.list.push({
             id: i,
-            source: `http://${item.image_file}`,
+            source: `https://${item.image_file}`,
             text: item.name,
             categories: this.categoriesMen[rdmCategories],
             priceList: this.priceList[rdmPrice]
@@ -185,7 +185,7 @@ export default {
           var rdmPrice = Math.floor(Math.random() * this.priceList.length)
           this.dataWomen.list.push({
             id: i,
-            source: `http://${item.image_file}`,
+            source: `https://${item.image_file}`,
             text: item.name,
             categories: this.categoriesWomen[rdmCategories],
             priceList: this.priceList[rdmPrice]
@@ -201,7 +201,7 @@ export default {
           var rdmPrice = Math.floor(Math.random() * this.priceList.length)
           this.dataAccesories.list.push({
             id: i,
-            source: `http://${item.image_file}`,
+            source: `https://${item.image_file}`,
             text: item.name,
             categories: this.categoriesWomen[rdmCategories],
             priceList: this.priceList[rdmPrice]
