@@ -1,8 +1,30 @@
-# sirclo-project
+# Mavelin Sirclo Project
 
-> A Vue.js project
+Mavelin Sirclo Project is a simple web for online store
+
+## Installation
+
+### NPM
+
+Install the package manager [NPM](https://www.npmjs.com/) to run the project.
+
+### Git 
+
+[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) or download the project to your local storage using git command.
+
+```git
+git clone https://github.com/ivanpwh/sirclo-project.git
+```
+
 
 ## Build Setup
+Change directory to Mavelin Sirclo Project on you local storage.
+
+```cmd
+cd sirclo-project
+```
+
+Run the project by executing this code.
 
 ``` bash
 # install dependencies
@@ -10,21 +32,4 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
