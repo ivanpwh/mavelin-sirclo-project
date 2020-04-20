@@ -1,0 +1,15 @@
+// set variables
+$white-smoke: #f5f5f5;
+$pink-swan: #b2b2b2;
+
+/* COMPONENTS - Re-usable site elements.
+========================================================================== */
+@import 'components/_carousel';
+@import 'components/_navbar';
+@import 'components/_dashboard';
+@import 'components/_footer';
+
+/* BASE - older holds what we might call the boilerplate stuff for your project
+========================================================================== */
+@import 'base/_app';
+@import 'base/_global';

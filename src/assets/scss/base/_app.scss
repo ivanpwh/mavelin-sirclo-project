@@ -1,0 +1,11 @@
+body { font-family: 'Open Sans', sans-serif }
+
+p { margin: 0;}
+
+.content {
+  transition: 1s transform cubic-bezier(.1,.12,.23,.82);
+}
+
+.open {
+  transform: translateX(150px);
+}

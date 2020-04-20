@@ -1,0 +1,71 @@
+/* start of desktop styles */
+.navbar {
+  background-color: $white-smoke;
+  justify-content: center;
+  min-height: 2rem;
+  .nav-item {
+    font-size: 16px;
+    color: black;
+  }
+  i {
+    position: absolute;
+    right: 4rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.navbar-mobile {
+  position: absolute;
+  z-index: -999;
+  background-color: $white-smoke;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 150px;
+  font-size: 12px;
+  i { position: unset; }
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+  .navbar {
+    justify-content: flex-start;
+    padding: 1.5rem 0;
+    i {
+      font-size: 2rem;
+      left: 2rem;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+  .navbar {
+    justify-content: flex-start;
+    padding: 1.5rem 0;
+    i {
+      font-size: 2rem;
+      left: 2rem;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+  .navbar {
+    justify-content: flex-start;
+    padding: 1.5rem 0;
+    i {
+      font-size: 2rem;
+      left: 1rem;
+      right: 0;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 <template>
   <div class="carousel-control">
     <a @click.prevent="handleClick"
-      class="banners" :class="buttonClass"
+      :class="[buttonClass, type === 'products' ? 'products' : '']"
       href="#carouselExampleControls"
       role="button" :data-slide="order">
-      <span :class="iconClass" aria-hidden="true"></span>
+      <span :class="[iconClass, type === 'products' ? 'products' : '']" aria-hidden="true"></span>
       <span class="sr-only"><slot></slot></span>
     </a>
   </div>

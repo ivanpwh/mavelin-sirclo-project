@@ -1,0 +1,126 @@
+/* start of desktop styles */
+.dashboard {
+  background-color: white;
+  &-title {
+    justify-content: space-between;
+    font-size: 14px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .dropdown {
+      margin-right: 1rem !important;
+      .btn-secondary {
+        background-color: white;
+        border-color: #adadad;
+        color: black;
+        font-size: 12px;
+        border-radius: 5px;
+      }
+    }
+    .fas {
+      font-size: 25px; 
+      margin-right: 5px;
+    }
+  }
+  &-promo {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    div {
+      &:nth-child(1) {
+        padding-right: 1rem !important;
+      }
+      &:nth-child(2) {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+      &:nth-child(3) {
+        padding-left: 1rem !important;
+      }
+    }
+  }
+  &-details {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 2px solid $white-smoke;
+    font-size: 12px;
+    &-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  &-products {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+  .dashboard {
+    &-title {
+      font-size: 10px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .dropdown {
+        margin-right: 5px !important;
+        .btn-secondary {
+          font-size: 10px;
+        }
+      }
+      p { margin-right: 5px !important; }
+      img { width: 150px; }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+  .dashboard {
+    &-title {
+      font-size: 10px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .dropdown {
+        margin-right: 5px !important;
+        .btn-secondary {
+          font-size: 10px;
+        }
+      }
+      p { margin-right: 5px !important; }
+      img { width: 150px; }
+    }
+    &-promo {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+      div {
+        &:nth-child(1) {
+          padding-right: 0.5rem !important;
+        }
+        &:nth-child(2) {
+          padding-left: 0.25rem !important;
+          padding-right: 0.25rem !important;
+        }
+        &:nth-child(3) {
+          padding-left: 0.5rem !important;
+        }
+      }
+    }
+    &-details {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 10px;
+      &-title {
+        font-size: 12px;
+      }
+    }
+    &-products {
+      padding-bottom: 1rem;
+    }
+  }
+}

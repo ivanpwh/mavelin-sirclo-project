@@ -1,0 +1,232 @@
+/* start of desktop styles */
+.carousel {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-item {
+    display: block;
+    font-size: 14px;
+    &-title {
+      font-weight: bold;
+      margin-bottom: 2rem;
+      font-size: 16px;
+      padding-left: 0.75rem;
+    }
+    &-categories {
+      color: $pink-swan;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+    &-list {
+      div {
+        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+          padding: 0 0.75rem !important;
+        }
+      }
+    }
+    &-text, &-price {
+      font-weight: bold;
+    }
+  }
+  &-inner.global-container {
+    margin-left: 3.25rem !important;
+    margin-right: 3.25rem !important;
+  }
+  &-item.products {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  &-control {
+    &-next, &-prev {
+      height: 100px;
+      width: 50px;
+      background-color: black;
+      top: 45%;
+      &-icon.products {
+        filter: invert(1);
+      }
+    }
+    &-next.products, &-prev.products {
+      height: 100px;
+      width: 50px;
+      background-color: white;
+      top: 45%;
+    }
+  }
+  &-indicators.products {
+    top: 2rem;
+    margin: 0;
+    justify-content: flex-end;
+    margin-right: 4rem;
+    li {
+      background-color: black;
+      border-radius: 100%;
+      width: 5px;
+      height: 5px;
+      &.active {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}
+
+.slide {
+  &-enter-active,
+  &-leave-active {
+    transition: transform 0.6s ease;
+  }
+  &-leave-to {
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+  }
+  &-enter {
+    transform: translateX(100%);
+  }
+  &-next {
+    &.slide {
+      &-leave-to {
+        transform: translateX(-100%);
+        position: absolute;
+        top: 0;
+      }
+      &-enter {
+        transform: translateX(100%);
+      }
+    }
+  }
+  &-prev{
+    &.slide {
+      &-leave-to {
+        transform: translateX(100%);
+        position: absolute;
+        top: 0;
+      }
+      &-enter {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+  .carousel {
+    &-inner.global-container {
+      margin-left: 1.25rem !important;
+      margin-right: 1.25rem !important;
+    }
+    &-indicators.products {
+      margin-right: 2rem;
+    }
+    &-item {
+      &-list {
+        div {
+          &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+            padding: 0 0.75rem !important;
+          }
+        }
+      }
+    }
+    &-control {
+      &-next, &-prev {
+        height: 75px;
+        width: 50px;
+        top: 43%;
+      }
+      &-next.products, &-prev.products {
+        height: 75px;
+        width: 25px;
+        background-color: transparent;
+        top: 43%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+  .carousel {
+    &-inner.global-container {
+      margin-left: 1.25rem !important;
+      margin-right: 1.25rem !important;
+    }
+    &-indicators.products {
+      margin-right: 2rem;
+    }
+    &-item {
+      &-list {
+        div {
+          &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+            padding: 0 0.75rem !important;
+          }
+        }
+      }
+    }
+    &-control {
+      &-next, &-prev {
+        height: 75px;
+        width: 50px;
+        top: 43%;
+      }
+      &-next.products, &-prev.products {
+        height: 75px;
+        width: 25px;
+        background-color: transparent;
+        top: 43%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+  .carousel {
+    &-item.products {
+      margin: 1rem 0;
+    }
+    &-inner.global-container {
+      margin-left: 0.75rem !important;
+      margin-right: 0.75rem !important;
+    }
+    &-indicators.products {
+      top: 1rem;
+      margin-right: 1rem;
+    }
+    &-item {
+      font-size: 10px;
+      &-title {
+        padding-left: 0.25rem;
+        margin-bottom: 1rem;
+        font-size: 14px;
+      }
+      &-categories {
+        font-size: 9px; 
+        margin-top: 5px;
+      }
+      &-list {
+        div {
+          &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+            padding: 0 0.25rem !important;
+          }
+        }
+      }
+    }
+    &-control {
+      &-next, &-prev {
+        height: 50px;
+        width: 25px;
+        top: 40%;
+      }
+      &-next.products, &-prev.products {
+        height: 50px;
+        width: 15px;
+        background-color: transparent;
+        top: 40%;
+      }
+    }
+  }
+}

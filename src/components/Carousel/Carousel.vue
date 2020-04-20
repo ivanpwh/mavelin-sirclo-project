@@ -1,5 +1,5 @@
 <template>
-  <div id="carouselExampleControls" class="carousel slide">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  data-interval="3000">
     <ol class="carousel-indicators" :class="data.type">
       <li v-for="item in data.type === 'banners' ? data.list : tempList" :key="item.id"
         data-target="#carouselExampleControls"
@@ -14,10 +14,11 @@
         :key="image.id"
         :active="image.isActive"
         :directionClass="directionClass"
-        :type="data.type">
+        :type="data.type"
+        data-interval="5000">
       </carousel-item>
     </div>
-    <div class="carousel-inner" v-else>
+    <div class="carousel-inner global-container" v-else>
       <carousel-item v-for="item in tempList"
         :list="item.list"
         :key="item.id"
