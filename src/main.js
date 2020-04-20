@@ -15,6 +15,8 @@ axios.defaults.baseURL = BASE_URL
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
+Vue.prototype.$eventHub = new Vue()
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

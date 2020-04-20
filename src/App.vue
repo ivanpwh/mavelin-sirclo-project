@@ -9,6 +9,7 @@
       <router-view/>
       <Footer/>
     </div>
+    <Modals/>
   </div>
 </template>
 
@@ -18,13 +19,15 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Navbar from '@/components/Navbar'
 import NavbarMobile from '@/components/NavbarMobile'
 import Footer from '@/components/Footer'
+import Modals from '@/components/Modals/Modals'
 
 export default {
   name: 'App',
   components: {
     Navbar,
     Footer,
-    NavbarMobile
+    NavbarMobile,
+    Modals
   },
   data: () => ({
     mobileView: false,
