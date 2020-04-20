@@ -21,7 +21,7 @@ git clone https://github.com/ivanpwh/sirclo-project.git
 Change directory to Mavelin Sirclo Project on you local storage.
 
 ```cmd
-cd sirclo-project
+cd mavelin-sirclo-project
 ```
 
 Run the project by executing this code.
